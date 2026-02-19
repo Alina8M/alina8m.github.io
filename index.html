@@ -21,6 +21,23 @@
   
     gtag('config', 'AW-17964253265');
   </script>
+  <!-- Event snippet -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17964253265/hoA7CMb9u_sbENGAg_ZC',
+        'value': 1.0,
+        'currency': 'UAH',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 
   <style>
     body {
