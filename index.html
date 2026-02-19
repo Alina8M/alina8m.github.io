@@ -80,7 +80,10 @@
   <p>4+ years in affiliate marketing (finance vertical).</p>
   <p>Experience in S2S tracking, onboarding publishers, traffic scaling and performance optimization.</p>
 
-  <a class="btn" href="https://www.google.com" target="_blank" onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me', 'page_path': '/' });">
+  <a class="btn" href="https://www.google.com" target="_blank" onclick="
+    gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me', 'page_path': '/' });
+    gtag_report_conversion('https://www.google.com');
+      return false;">
     Contact Me
   </a>
 
